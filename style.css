@@ -22,10 +22,11 @@
     z-index: 2;
 }
 
-.showcase header{
+header{
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
     padding: 40px 100px;
     z-index: 1000;
     display: flex;
@@ -120,5 +121,27 @@
     letter-spacing: 6px;
 }
 
-.menu{
+.social{
+    position: absolute;
+    bottom: 20px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social li{
+    list-style: none;
+}
+
+.social li a{
+    display: inline-block;
+    filter: invert(1);
+    margin-right: 20px;
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+
+.social li a:hover{
+    transform: scale(0.9) translateY(-15px);
 }
