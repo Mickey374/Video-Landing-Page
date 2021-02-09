@@ -23,6 +23,7 @@
     background: black;
     color: white;
     z-index: 2;
+    transition: 0.8s;
 }
 
 .showcase.active{
@@ -181,7 +182,7 @@
 }
 
 /*Responsiveness for Mobile and Tablet view*/
-@media(max-width: 991px){
+@media(max-width: 798px){
     .showcase, .showcase header{
         padding: 40px;
     }
