@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 
+:root{
+    --overlay-color: #03a9f4;
+}
 
 * {
     margin: 0;
@@ -22,7 +25,12 @@
     z-index: 2;
 }
 
-header{
+.showcase.active{
+    right: 300px;
+
+}
+
+.showcase header{
     position: absolute;
     top: 0;
     left: 0;
@@ -74,7 +82,7 @@ header{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #61696d;
+    background-color: var(--overlay-color);
     mix-blend-mode: overlay;
 }
 
@@ -146,6 +154,31 @@ header{
     transform: scale(0.9) translateY(-15px);
 }
 
+.menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu ul{
+    position: relative;
+    list-style-type: none;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    font-size: 24px;
+    color: #111;
+}
+
+.menu ul li a:hover{
+    color: var(--overlay-color);
+}
 
 /*Responsiveness for Mobile and Tablet view*/
 @media(max-width: 991px){
